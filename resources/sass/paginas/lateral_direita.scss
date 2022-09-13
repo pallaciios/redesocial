@@ -1,0 +1,87 @@
+.lateral_direita{
+    width: 100%;
+    padding: 25px 0;
+    @include desktop{
+    width: 22.85%;
+    }
+    .form_nova_mensagem{
+        width: 100%;
+        margin-bottom: 25px;
+        form{
+            width: 100%;
+            position: relative;
+            textarea{
+                resize: none;
+                border: 1px solid #dbdbdb;
+                width: 100%;
+                padding: 10px 9px;
+                font-size: 16px;
+                color: #b8b8b8;
+                font-family: 'Montserrat Regular';
+                height: 150px;
+                border-radius: 0 0 10px 0;
+            }
+            input[type="submit"]{
+                margin-right: 0;
+                display: block;
+                margin-top: -43px;
+                z-index: 9;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    .foto, .seguindo{
+        border: 1px solid #dbdbdb;
+        padding: 20px 30px;
+        margin-bottom: 50px;
+    
+        p{
+            color: #b1b1b1;
+            text-align: center;
+            margin-bottom: 18px;
+            line-height: 1;
+        }
+
+        ul{
+            display: inline-flex;
+            flex-wrap: wrap;
+            li{
+                width: 29.84%;
+                margin-right: 4.74%;
+                margin-bottom: 4.74%;
+                a{
+                    width: 100%;
+                    display: block;
+                    background-color: #dfdfdf;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                &:nth-child(3n+3){
+                    margin-right: 0;
+                }
+                &:nth-child(1),
+                &:nth-child(2)
+                &:nth-child(3){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .footer{
+        background-color: $color_destaque;
+        padding: 40px;
+        .content{
+            padding: 0 10px;
+            p{
+                color: #fff;
+                text-align: center;
+                font-family: 'Montserrat Regular';
+                font-size: 15px;
+            }
+        }
+    }
+}

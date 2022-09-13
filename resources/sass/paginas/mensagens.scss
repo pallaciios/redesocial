@@ -1,0 +1,105 @@
+.mensagens{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .conteudo{
+        width: 100%;
+        margin: 25px 0;
+        border: 1px solid #dfdfdf;
+        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.1);
+        @include desktop{
+        width: 73.57%;
+        }
+
+        &.oculto{
+            opacity: 0;
+        }
+
+        .central{
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 100%;
+
+            .conteudo_mensagem{
+                padding: 23px 29px 20px;
+                width: 100%;
+                display: block;
+                
+                .topo{
+                    display: inline-flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    img{
+                       width: 60px;
+                       margin-right: 15px;
+                       border-radius: 50%; 
+                       background-color: #009bdb;
+                    }
+                    p.nome{
+                        font-size: 16px;
+                        color: #acacac;
+                        font-family: 'Montserrat Medium';
+                    }
+                }
+                hr{
+                    width: 100%;
+                    display: block;
+                    margin: 22px 0;
+                    color: #dbdbdb;
+                }
+                .lista_mensagens{
+                    width: 100%;
+                    display: block;
+                    height: 300px;
+                    overflow-y: auto;
+
+                    .mensagem{
+                        width: 85%;
+                        background-color: #eaf0d1;
+                        padding: 11px;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        font-family: 'Montserrat Regular';
+                        color: #4b4b4b;
+                        line-height: 1.5;
+                        margin-bottom: 20px;
+
+                        @include desktop{
+                            width: 70%;
+                        }
+                        
+                        &.eu{
+                            margin: 0 0 20px auto;
+                        }
+                    }
+                }
+            }
+
+            form{
+                width: 100%;
+                display: inline-flex;
+                border: 1px solid #dfdfdf;
+                
+                input[type="text"]{
+                    width: 100%;
+                    color: #6c6c6c;
+                    font-size: 16px;
+                    padding: 14px 26px;
+                    border-radius: 0px;
+                }
+                input[type="submit"]{
+                    width: auto;
+                    margin: 0;
+                    border-radius: 0px;
+                    font-family: 'Montserrat Medium';
+                    font-size: 16px;
+                    text-transform: none;
+                }
+            }
+        }
+        
+    }
+}

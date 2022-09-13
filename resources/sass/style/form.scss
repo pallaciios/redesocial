@@ -1,0 +1,65 @@
+input{
+    border-radius: 10px;
+    line-height: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #8a8a8a;
+    padding: 0 20px;
+    margin-right: 13px;
+    font-weight: bold;
+    border: 0;
+    &:focus{
+        outline: none;
+    }
+}
+
+textarea{
+    &:focus{
+        outline: none;
+    }
+}
+
+input[type="submit"]{
+    background-color: $color_background_botao;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .25s;
+    &:hover{
+        background-color: $color_background_botao_hover;
+    }
+}
+
+.btn{
+    border: 0;
+    font-size: 17px;
+    line-height: 1;
+    padding: 13px 17px;
+    border-radius: 7px;
+    background-color: $color_background_botao;
+    color: #fff;
+    cursor: pointer;
+    transition: .25s;
+    &:hover{
+        background-color: $color_background_botao_hover;
+    }
+}
+
+.alerta {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+    color: #686868;
+    display: none;
+
+    &.sucesso{
+        background-color: #00bb005e;
+        display: block;
+    }
+
+    &.erro{ 
+        background-color: #cc040457;
+        display: block;
+    }
+}
